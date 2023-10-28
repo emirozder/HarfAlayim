@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Harf Alayım</string>
+    <string name="hakkinda_text">• Ayarlar sekmesine tıklanarak oyuncu adı ve profil fotoğrafı değiştirilebilir.\n
+        • Harf Alayım, ilk sürümünde, 10 kategoriden 10\'ar kelime olmak üzere 100 kelime ile oynanmaktadır.\n
+        • Giriş ekranında bulunan \'BAŞLA\' butonuna basarak oyuna başlanır.\n
+        • Ekranda gösterilen kategoriye ait bir kelime, harfleri kapalı bir şekilde oyuncuya sunulur.
+        Oyuncu, tahminde bulunarak kelimeyi bulmaya çalışır.\n
+        • \'HARF  ALAYIM\' butonuna basılarak, bir yıldız karşılığında tahmin edilecek kelimenin bir harfi açılabilir.\n
+        • \'PAS\' butonuna basılarak, doğru veya yanlış sayısında bir değişim olmadan, bir yıldız karşılığında kelime pas geçilebilir.\n
+        • Tahmin değeri ilgili kutucuğa yazıldıktan sonra \'BENJAMIN\' butonuna basılarak tahminde bulunulur.\n
+        - Eğer doğru tahminde bulunulmuşsa, sahip olunan yıldız sayısı bir artırılarak ilgili kategoriye ait yeni bir kelime oyuncuya sunulur.\n
+        - Eğer yanlış tahminde bulunulmuşsa, sahip olunan yıldız sayısı bir azaltılarak ilgili kategoriye ait yeni bir kelime oyuncuya sunulur.\n
+        • Bir kategoriye ait tüm kelimeler cevaplandırıldığında yeni kategoriye ait kelimeler oyuncuya sunulmaya başlanır.\n
+        • Tahmin edilen doğru kelime sayısı oyuncunun skoru olarak tutulur. En çok doğru tahmin edilen kelime sayısı, oyuncunun en iyi skoru olarak kaydedilir.\n
+        • Yıldız sayısının bitmesiyle oyun sona erer ve oyun istatistikleri oyuncuya gösterilir.\n\n İyi eğlenceler!</string>
+    <string name="kategori">
+        <u></u>
+    </string>
+</resources>

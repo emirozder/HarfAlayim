@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    tools:context=".BaslaActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/best_score_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/best_score_container"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        app:layout_constraintStart_toStartOf="@+id/question_container"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_eniyiskor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/letters"
+            android:text="En İyi Skor:"
+            android:textColor="@color/kahve"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_bestScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/letters"
+            android:maxLength="3"
+            android:textColor="@color/kahve"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/txt_kelime"
+            app:layout_constraintStart_toEndOf="@id/txt_eniyiskor"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_kelime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/letters"
+            android:text="Kelime"
+            android:textColor="@color/kahve"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txt_bestScore"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/score_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/score_container"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/question_container"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_canSayisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/letters"
+            android:maxLength="4"
+            android:text="+5"
+            android:textColor="@color/kahve"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_star"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txt_canSayisi"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/question_container"
+        android:background="@drawable/question_container_new"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/score_container"
+        app:layout_constraintBottom_toTopOf="@+id/txt_cevap"
+        android:orientation="vertical"
+        android:layout_marginTop="27dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_category"
+            android:layout_gravity="center"
+            android:fontFamily="@font/letters"
+            android:text="Kategori: "
+            android:textAlignment="center"
+            android:textColor="@color/bej"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_marginTop="17dp"/>
+
+        <TextView
+            android:id="@+id/txt_soru"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/letters"
+            android:text="Soru buraya gelecek"
+            android:textAlignment="center"
+            android:textColor="@color/kahve"
+            android:textSize="27sp"
+            android:textStyle="normal"
+            android:layout_marginTop="40dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_cevap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/answer_container"
+        android:fontFamily="@font/letters"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/kahve"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_container"
+        android:layout_marginTop="27dp"/>
+
+    <EditText
+        android:id="@+id/et_tahmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guess_container"
+        android:fontFamily="@font/letters"
+        android:gravity="center"
+        android:hint="Tahminini yaz!"
+        android:textAlignment="center"
+        android:textColor="@color/kahve"
+        android:textColorHint="#80994319"
+        android:textCursorDrawable="@null"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cevap"
+        android:layout_marginTop="27dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="27dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_tahmin">
+
+        <Button
+            android:id="@+id/btn_harfalayim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_harfalayim_bg"
+            android:onClick="btn_harfAlayimClick" />
+
+        <Button
+            android:id="@+id/btn_pas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/btn_pas_bg"
+            android:onClick="btn_pasClick" />
+
+        <Button
+            android:id="@+id/btn_benjamin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/btn_benjamin_bg"
+            android:onClick="btn_benjaminClick" />
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/true_animView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:lottie_rawRes="@raw/true_anim"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:layout_constraintEnd_toEndOf="@id/txt_cevap"
+        app:layout_constraintStart_toStartOf="@id/txt_cevap"
+        app:layout_constraintTop_toTopOf="@id/txt_cevap"
+        app:layout_constraintBottom_toBottomOf="@id/txt_cevap"
+        android:visibility="invisible"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/false_animView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:lottie_rawRes="@raw/false_anim"
+        app:layout_constraintRight_toRightOf="@id/txt_cevap"
+        app:layout_constraintLeft_toLeftOf="@id/txt_cevap"
+        app:layout_constraintTop_toTopOf="@+id/txt_cevap"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_cevap"
+        android:visibility="invisible"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/pass_animView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:lottie_rawRes="@raw/pass_anim"
+        app:layout_constraintRight_toRightOf="@id/txt_cevap"
+        app:layout_constraintLeft_toLeftOf="@id/txt_cevap"
+        app:layout_constraintTop_toTopOf="@+id/txt_cevap"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_cevap"
+        android:visibility="invisible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/cd_stats_dialog_container">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtIstatistikler"
+        android:textSize="36sp"
+        android:text="İstatistikler"
+        android:fontFamily="@font/letters"
+        android:textColor="@color/kahve"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cd_stats_wordCount_linearLayout"
+        android:background="@drawable/cd_stats_progressbar_container"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/txtIstatistikler"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_wordCount"
+            android:textSize="18sp"
+            android:fontFamily="@font/letters"
+            android:textColor="@color/kahve"
+            android:textStyle="bold"
+            android:text="Açılan Kelime Sayısı"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="13dp"/>
+
+        <ProgressBar
+            android:id="@+id/cd_stats_progressbarWordCount"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="13dp"
+            android:progressDrawable="@drawable/custom_progressbar_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_wordCountStats"
+            android:text="5 / 10"
+            android:textSize="18sp"
+            android:fontFamily="@font/letters"
+            android:textColor="@color/kahve"
+            android:textStyle="bold"
+            android:layout_gravity="end"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="13dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cd_stats_trueWordCount_linearLayout"
+        android:background="@drawable/cd_stats_progressbar_container"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/cd_stats_wordCount_linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_trueWordCount"
+            android:textSize="18sp"
+            android:fontFamily="@font/letters"
+            android:textColor="@color/kahve"
+            android:textStyle="bold"
+            android:text="Doğru Tahmin Edilen Kelime Sayısı"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="13dp"/>
+
+        <ProgressBar
+            android:id="@+id/cd_stats_progressbarTrueWordCount"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="13dp"
+            android:progressDrawable="@drawable/custom_progressbar_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="13dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_statsBestScore"
+                android:text="En İyi Skor: 14"
+                android:textSize="18sp"
+                android:fontFamily="@font/letters"
+                android:textColor="@color/kahve"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_trueWordCountStats"
+                android:textSize="18sp"
+                android:text="5 / 10"
+                android:fontFamily="@font/letters"
+                android:textColor="@color/kahve"
+                android:textStyle="bold"
+                android:gravity="end"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cd_stats_falseWordCount_linearLayout"
+        android:background="@drawable/cd_stats_progressbar_container"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/cd_stats_trueWordCount_linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_falseWordCount"
+            android:textSize="18sp"
+            android:fontFamily="@font/letters"
+            android:textColor="@color/kahve"
+            android:textStyle="bold"
+            android:text="Yanlış Tahmin Edilen Kelime Sayısı"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="13dp"/>
+
+        <ProgressBar
+            android:id="@+id/cd_stats_progressbarFalseWordCount"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="13dp"
+            android:progressDrawable="@drawable/custom_progressbar_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_falseWordCountStats"
+            android:text="5 / 10"
+            android:textSize="18sp"
+            android:fontFamily="@font/letters"
+            android:textColor="@color/kahve"
+            android:textStyle="bold"
+            android:layout_gravity="end"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="13dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cd_stats_complatedCategoryCount_linearLayout"
+        android:background="@drawable/cd_stats_progressbar_container"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/cd_stats_falseWordCount_linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_complatedCategoryCount"
+            android:textSize="18sp"
+            android:fontFamily="@font/letters"
+            android:textColor="@color/kahve"
+            android:textStyle="bold"
+            android:text="Tamamlanan Kategori Sayısı"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="13dp"/>
+
+        <ProgressBar
+            android:id="@+id/cd_stats_progressbarcomplatedCategoryCount"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="13dp"
+            android:progressDrawable="@drawable/custom_progressbar_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_complatedCategoryCountStats"
+            android:text="5 / 10"
+            android:textSize="18sp"
+            android:fontFamily="@font/letters"
+            android:textColor="@color/kahve"
+            android:textStyle="bold"
+            android:layout_gravity="end"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="13dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cd_stats_buttons_linearLayout"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/cd_stats_complatedCategoryCount_linearLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/statsCD_btn_anamenu"
+            android:background="@drawable/statscustomdialog_btn_anamenu_bg"
+            android:onClick="statsCD_btn_anamenuClick"
+            android:layout_marginEnd="30dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/statsCD_btn_tekraroyna"
+            android:background="@drawable/statscustomdialog_btn_tekraroyna_bg"
+            android:onClick="statsCD_btn_tekraroynaClick"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

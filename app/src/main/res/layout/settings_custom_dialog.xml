@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cd_dialog_container">
+
+    <TextView
+        android:id="@+id/txtAyarlar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/letters"
+        android:text="Ayarlar"
+        android:textAlignment="center"
+        android:textColor="@color/kahve"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/settingsCD_nameLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAyarlar"
+        android:layout_marginTop="38dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/letters"
+            android:text="Oyuncu Adı:"
+            android:textAlignment="center"
+            android:textColor="@color/kahve"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/et_settingsCD_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="19dp"
+            android:background="@drawable/cd_name_container"
+            android:fontFamily="@font/letters"
+            android:maxLength="15"
+            android:text="Oyuncu"
+            android:textAlignment="center"
+            android:textColor="@color/kahve"
+            android:textCursorDrawable="@null"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settingsCD_profileLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_marginStart="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsCD_nameLinearLayout">
+
+        <TextView
+            android:id="@+id/txtProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/letters"
+            android:text="Profil Fotoğrafı:"
+            android:textAlignment="center"
+            android:textColor="@color/kahve"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cd_imgView_profile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="27dp"
+            android:src="@drawable/ic_profile"
+            app:civ_border_color="@color/kahve"
+            app:civ_border_width="3dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settingsCD_butonlarLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsCD_profileLinearLayout"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/settingsCD_btn_kaydet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/settingscustomdialog_btn_kaydet_bg"
+            android:onClick="settingsCD_btn_kaydetClick"
+            android:layout_marginEnd="30dp"/>
+
+        <Button
+            android:id="@+id/settingsCD_btn_cikis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/settingscustomdialog_btn_cikis_bg"
+            android:onClick="settingsCD_btn_cikisClick" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

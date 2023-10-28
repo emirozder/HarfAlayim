@@ -1,0 +1,49 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/drawable/about_customdialog_btn_kapat_bg.xml" value="0.2485" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/drawable/btn_basla_bg.xml" value="0.215" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/drawable/btn_benjamin_bg.xml" value="0.247" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/drawable/btn_bitir_bg.xml" value="0.2485" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/drawable/btn_cikis_bg.xml" value="0.215" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/drawable/btn_evet_bg.xml" value="0.2485" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/drawable/btn_harfalayim_bg.xml" value="0.247" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/drawable/btn_hayir_bg.xml" value="0.2485" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/drawable/btn_pas_bg.xml" value="0.2485" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/drawable/btn_settings_bg.xml" value="0.247" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/drawable/custom_cursor_color.xml" value="0.247" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/drawable/custom_progressbar_bg.xml" value="0.247" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/drawable/ic_settings.xml" value="0.247" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/drawable/ic_settings_pressed.xml" value="0.247" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/drawable/newly_created_background_name.xml" value="0.247" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/drawable/settings_customdialog_bg.xml" value="0.247" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/drawable/settingscustomdialog_btn_cikis_bg.xml" value="0.247" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/drawable/settingscustomdialog_btn_kaydet_bg.xml" value="0.247" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/drawable/statscustomdialog_btn_anamenu_bg.xml" value="0.2485" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/drawable/statscustomdialog_btn_tekraroyna_bg.xml" value="0.2485" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/layout/about_custom_dialog.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/layout/activity_basla.xml" value="0.33" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/layout/activity_splash_screen.xml" value="0.33" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/layout/backpressed_custom_dialog.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/layout/exit_custom_dialog.xml" value="0.365625" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/layout/settings_custom_dialog.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android/AndroidStudioProjects/harfalayim/app/src/main/res/layout/statistics_custom_dialog.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.15" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

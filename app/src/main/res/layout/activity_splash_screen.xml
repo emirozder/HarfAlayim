@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    tools:context=".SplashScreenActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo_gif_container"
+        android:background="@drawable/logo_gif_container"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="76dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            app:lottie_rawRes="@raw/splash_anim"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar_container"
+        android:background="@drawable/progressbar_container"
+        app:layout_constraintTop_toBottomOf="@+id/logo_gif_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="76dp"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="13dp"
+            android:max="100"
+            android:min="0"
+            android:progressDrawable="@drawable/custom_progressbar_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_progressbar"
+            android:layout_gravity="center"
+            android:fontFamily="@font/letters"
+            android:textAlignment="center"
+            android:textColor="@color/kahve"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

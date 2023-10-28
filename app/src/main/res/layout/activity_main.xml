@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner"
+        android:background="@drawable/banner_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="27dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="31dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:id="@+id/imgView_profilePhoto"
+            android:src="@drawable/ic_profile"
+            app:civ_border_width="3dp"
+            app:civ_border_color="@color/kahve"
+            android:layout_gravity="center"
+            android:layout_marginStart="18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_name"
+            android:background="@drawable/name_container"
+            android:fontFamily="@font/letters"
+            android:text="Oyuncu"
+            android:textAlignment="center"
+            android:textColor="@color/kahve"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgView_settings"
+            android:background="@drawable/btn_settings_bg"
+            android:layout_gravity="center"
+            android:onClick="btn_settings"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgView_harfalayim_logo_main"
+        android:background="@drawable/harfalayim_logo_main"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/banner"
+        app:layout_constraintBottom_toTopOf="@+id/mainButonlarLinearLayout"
+        android:layout_marginTop="42dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainButonlarLinearLayout"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/imgView_harfalayim_logo_main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="42dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_basla"
+                android:onClick="mainBtnClick"
+                android:background="@drawable/btn_basla_bg"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_hakkinda"
+                android:onClick="mainBtnClick"
+                android:background="@drawable/btn_hakkinda_bg"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_cikis"
+                android:onClick="mainBtnClick"
+                android:background="@drawable/btn_cikis_bg"/>
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
